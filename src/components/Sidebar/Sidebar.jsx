@@ -26,6 +26,7 @@ const Sidebar = () => {
           <div className="icon"></div>
           <span>To withdraw more than <b> 10,000 SAR </b> you need to <b>verify</b>  your banking account.</span>
         </div>
+        <div className='divider'></div>
       </div>
       <div className="illustration">
         <img src={Man} alt='man' />

@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    border-bottom: 1px solid #80808026;
+  
+    .nav-items {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    
+        .nav-item {
+          padding-bottom: 0.5rem;
+          position: relative;
+
+          &.auto-invest {
+            font-weight: bold;
+          }
+
+          &.active::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -32px;
+            left: 0;
+            width: 31%;
+            height: 3px;
+            background-color: #2D91FE;
+            border-radius: 22px;
+          }
+        }
+      }
+  
+    .user-settings {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  
+      .language-selector {
+        cursor: pointer;
+      }
+  
+      .user-icon {
+        width: 35px;
+        height: 41px;
+        background-image: url('../../assets/images/Avatar.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+      .notify-icon {
+        width: 24px;
+        height: 24px;
+        background-image: url('../../assets/images/notify.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+  }

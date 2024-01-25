@@ -3,13 +3,15 @@
     grid-template-columns: 300px 1fr; 
     grid-gap: 1rem; 
     height: 100vh; 
-  
+
    
   
     .main-content {
       padding: 1rem; 
       background-color: #fff; 
       overflow: auto; 
+      border-left: 1px solid #80808026;
+      padding-left: 40px;
     }
   }
   
