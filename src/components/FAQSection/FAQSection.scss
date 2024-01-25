@@ -1,0 +1,37 @@
+.faq-section {
+    margin-bottom: 40px;
+
+    .faq-item {
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        .faq-question {
+            padding: 10px;
+            border-bottom: 1px solid #cccccc98;
+            background-color: #f9f9f900;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .arrow {
+                transition: transform 0.3s ease;
+            }
+
+            .arrow.active {
+                transform: rotate(180deg);
+            }
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 10px;
+            background-color: #fff;
+        }
+
+        .faq-answer.active {
+            max-height: 200px;
+        }
+    }
+}
