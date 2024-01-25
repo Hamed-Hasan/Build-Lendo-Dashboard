@@ -1,25 +1,22 @@
 .layout {
     display: grid;
-    grid-template-columns: 250px 1fr; // Sidebar width of 250px and the rest for content
-    grid-gap: 1rem; // Gap between sidebar and main content
-    height: 100vh; // Full viewport height
+    grid-template-columns: 300px 1fr; 
+    grid-gap: 1rem; 
+    height: 100vh; 
   
-    .sidebar {
-      background-color: #f4f4f4; // Sidebar color
-      // Add padding, styles for links, etc.
-    }
+   
   
     .main-content {
-      padding: 1rem; // Padding around main content
-      background-color: #fff; // Main content background color
-      overflow: auto; // In case of scrolling
+      padding: 1rem; 
+      background-color: #fff; 
+      overflow: auto; 
     }
   }
   
   // Responsive design adjustments
   @media (max-width: 768px) {
     .layout {
-      grid-template-columns: 1fr; // Stack sidebar and main content on smaller screens
+      grid-template-columns: 1fr; 
       
       .sidebar {
         // Adjust sidebar styles for mobile 

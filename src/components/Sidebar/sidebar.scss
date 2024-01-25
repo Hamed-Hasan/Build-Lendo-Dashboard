@@ -1,0 +1,145 @@
+.sidebar {
+  background-color: #ffffff;
+  width: 250px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 1.3rem;
+  padding-left: 31px;
+
+  .sidebar {
+    .logo img {
+      width: 89px;
+      margin-left: -120px;
+    }
+
+
+
+    .account-balance-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      padding-top: 40px;
+      margin-left: -33px;
+
+
+      .icon-left {
+        width: 49px;
+        height: 46px;
+        background-image: url("../../assets/images/money.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .balance-info {
+        flex-grow: 1;
+        margin: 0 1rem;
+        text-align: left;
+
+        .balance-amount {
+          font-size: 19px;
+          font-weight: bold;
+          color: #000000;
+        }
+
+        .balance-label {
+          font-size: 0.875rem;
+          color: #6c757d;
+          margin-top: 0.25rem;
+        }
+      }
+
+      .icon-right {
+        width: 24px;
+        height: 24px;
+        background-image: url('../../assets/images/arr.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 35px;
+      }
+    }
+
+  }
+
+
+  .button-group {
+    display: flex;
+    gap: 1rem;
+
+    .button {
+      font-size: 15px;
+      text-align: center;
+      border-radius: 20px;
+      padding: -12.25rem -20.5rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-weight: 300;
+
+      &.deposit {
+        background-color: #007bff;
+        color: white;
+      }
+
+      &.withdraw {
+        background-color: #ffffff;
+        color: black;
+        border: 1px solid #cecece;
+      }
+
+      &:hover {
+        // Define hover styles if any
+      }
+    }
+  }
+
+
+
+  .notification {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #6c757d;
+    padding-top: 27px;
+
+    .icon {
+      width: 48px;
+      height: 49px;
+      margin-right: 0.5rem;
+      background-image: url('../../assets/images/warning.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .illustration img {
+    width: 178px;
+    height: 138px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .trust-section {
+    text-align: center;
+
+    .trust-header {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #000;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+  }
+}
