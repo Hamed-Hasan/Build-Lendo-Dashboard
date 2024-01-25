@@ -17,7 +17,8 @@ const Dashboard = () => {
         {/* <AccountBalance /> */}
         <StrategySection/>
         <InvestmentDetails />
-        <RiskScoreDistribution />
+        <InvestmentDetails />
+        <RiskScoreDistribution /> 
         {/* More components */}
       </div>
     </Layout>

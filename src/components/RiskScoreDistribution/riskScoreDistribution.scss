@@ -1,1 +1,33 @@
-.score-distribution{opacity: 0;}
+.risk {
+    opacity: .0;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; // Create two columns of equal width
+    gap: 20px; // Optional: Add some space between the columns
+    position: relative;
+    top: -75px;
+
+    .column {
+        border: 1px solid rgba(128, 128, 128, 0.1490196078);
+        border-radius: 20px;
+        padding: 18px 40px;
+    }
+
+    .column img {
+        width: 80%;
+        height: auto;
+
+    }
+
+    .mFlex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mFlex .icon {
+        width: 16px;
+    }
+}
