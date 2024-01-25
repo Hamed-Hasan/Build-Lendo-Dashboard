@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './AutoInvestment.scss';
 
 const AutoInvestment = () => {
-    return (
-        <div>
-            Please note this is a high-level overview. Each component would need to be fleshed out with the proper HTML structure and SCSS to match the design precisely. The actual implementation would be more complex and would need to handle user interactions, state management, and possibly data fetching if the data is dynamic.
-        </div>
-    );
+  const [isActive, setIsActive] = useState(true); 
+
+  const toggleSwitch = () => {
+    setIsActive(!isActive);
+  };
+
+  return (
+    <div className="auto-investment-section">
+      <div>
+      <span className="title">Auto Investment</span>
+      </div>
+     <div>
+     <span className="status">{isActive ? 'Active' : 'Inactive'}</span>
+         <label className="switch">
+        <input type="checkbox" checked={isActive} onChange={toggleSwitch} />
+        <span className="slider"></span>
+      </label>
+     
+     </div>
+    </div>
+  );
 };
 
 export default AutoInvestment;

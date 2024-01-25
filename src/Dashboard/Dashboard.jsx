@@ -13,8 +13,8 @@ const Dashboard = () => {
     <Layout sidebar={<Sidebar />}>
       <div>
         <Header />
-        <AccountBalance />
         <AutoInvestment />
+        <AccountBalance />
         <InvestmentDetails />
         <RiskScoreDistribution />
         {/* More components */}
