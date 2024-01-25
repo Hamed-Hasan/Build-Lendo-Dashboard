@@ -1,0 +1,119 @@
+.strategy-container {
+  border: 1px solid rgba(128, 128, 128, 0.1490196078);
+  border-radius: 20px;
+  padding: 18px 40px;
+
+  .strategy-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .conservative {
+          background: linear-gradient(to bottom right, #218AF5, #2AA0FC);
+          border-radius: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+
+          .tag {
+              margin-bottom: 16px;
+              font-weight: 500;
+          }
+
+          .rate {
+              font-size: 24px;
+              font-weight: bold;
+          }
+
+          .description {
+              font-size: 13px;
+              font-weight: 200;
+          }
+      }
+
+      .card-details-main {
+          padding: 20px;
+
+          .card-details {
+              display: flex;
+              justify-content: space-between;
+          }
+
+          .note {
+              margin-top: 10px;
+              font-size: smaller;
+              color: rgba(189, 189, 189, 0.575);
+          }
+      }
+
+      .card-details-main {
+          position: relative;
+
+          .card-details {
+              display: flex;
+              align-content: space-around;
+              justify-content: space-between;
+          }
+      }
+
+      .actions-text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+
+          .loans {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+
+              .number {
+                  font-size: bold;
+                  font-weight: bold;
+                  color: #2E3069;
+              }
+
+              .description {
+                  font-size: 1rem;
+                  color: #BDB1C3;
+              }
+          }
+
+          .buttons {
+              display: flex;
+              gap: 10px;
+              position: relative;
+              top: 25px;
+
+              button {
+                  border: none;
+                  padding: 8px 16px;
+                  font-size: 11px;
+                  border-radius: 40px;
+                  cursor: pointer;
+                  outline: none;
+
+                  &:focus {
+                      outline: none;
+                  }
+              }
+
+              .stop {
+                  background-color: #FF6769;
+                  color: white;
+              }
+
+              .change {
+                  background-color: #FEFEFE;
+                  color: #2E3069;
+                  border: 1px solid #bdb1c36c;
+              }
+          }
+      }
+  }
+}

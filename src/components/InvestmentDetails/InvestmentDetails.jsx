@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './InvestmentDetails.scss'
 const InvestmentDetails = () => {
     return (
-        <div>
-           sidebar three
+        <div className='opacity-custom'>
+          
         </div>
     );
 };
