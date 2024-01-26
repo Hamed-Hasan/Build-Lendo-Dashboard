@@ -59,6 +59,26 @@
               display: flex;
               align-content: space-around;
               justify-content: space-between;
+
+
+              
+              .amount {
+                  font-size: bold;
+                  font-weight: bold;
+                  color: #2E3069;
+              }
+              .title {
+                  font-size: bold;
+                  font-weight: bold;
+                  color: #8DBF42;
+              }
+
+              .status,
+              .description{
+                color: rgba(126, 122, 122, 0.534);
+                font-size: 14px;
+                font-weight: 300;
+              }
           }
       }
 
@@ -69,20 +89,25 @@
           justify-content: center;
           gap: 10px;
 
+          
           .loans {
               display: flex;
               flex-direction: column;
               justify-content: flex-start;
+              position: relative;
+              top: 8px;
 
-              .number {
+              .number,
+              .description {
                   font-size: bold;
                   font-weight: bold;
                   color: #2E3069;
               }
 
               .description {
-                  font-size: 1rem;
-                  color: #BDB1C3;
+                color: rgba(126, 122, 122, 0.534);
+                font-size: 14px;
+                font-weight: 300;
               }
           }
 
