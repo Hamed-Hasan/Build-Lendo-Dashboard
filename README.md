@@ -10,6 +10,17 @@ Visit the live demo of the project to see it in action:
 
 👉 [Lendo Dashboard Live](https://lendo-dashboard.netlify.app/)
 
+## Technologies 🛠️
+
+This project is built with a robust stack of modern technologies designed for performance, scalability, and developer experience.
+
+- **React.js** ⚛️: The core of our application, providing a reactive and component-based approach to building user interfaces.
+- **SCSS** 💎: Advanced styling with SCSS allows for cleaner, more maintainable CSS with features like variables, nesting, and mixins.
+- **HTML5** 📄: Semantic HTML markup ensures accessibility and SEO-friendliness of the web application.
+- **JavaScript (ES6+)** 📜: Modern JavaScript syntax for cleaner code and enhanced functionality.
+- **ESLint** 🔍: Keeps the code in check for consistency and to avoid syntactic pitfalls.
+- **npm** 🧶: For managing all the dependencies and running build scripts.
+
 ## Features ✨
 
 - **Pixel-Perfect Design Conversion** 🎨: Transforms Figma designs into a fully functional web page that matches the mockup exactly.
